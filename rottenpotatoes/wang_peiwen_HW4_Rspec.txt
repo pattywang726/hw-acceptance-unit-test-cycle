@@ -1,8 +1,22 @@
-........
+
+MoviesController
+  Find with same director
+    should grab the id of the movie that is the subject of the match
+    should return Similar Movie page while specified movie has a director
+    should return Home page while specified movie has no director info
+    should make the error message available to that template
+
+Movie
+  Find movies whose director matches
+    should return movies list whose derictor matches the specific movie (NOT included) if there exist
+    should not return matches of movies by different directors
+    should return a empty array if there is no match
+  check_director
+    should return false if the movie has no director info
 
 2 deprecation warnings total
 
-Finished in 0.23411 seconds (files took 1.66 seconds to load)
+Finished in 0.18834 seconds (files took 1.61 seconds to load)
 8 examples, 0 failures
 
 Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 58 / 67 LOC (86.57%) covered.
